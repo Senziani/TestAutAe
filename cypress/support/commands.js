@@ -26,8 +26,8 @@
 
 Cypress.Commands.add('preencherCampos', (email, senha) => {
 
-    cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type(email);
-    cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type(senha);
+    cy.get("[name='username']").type(email);
+    cy.get("[name='password']").type(senha);
 
 
 })
