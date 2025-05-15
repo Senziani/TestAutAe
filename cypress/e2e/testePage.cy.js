@@ -1,18 +1,9 @@
 /// <reference types = "cypress" />
 // para ativar o auto complete do cypress temos que ter a pasta do node no projeto, para seta :  npm i -D cypress
 
-// melhorando escalabilidade dos testes
+// melhorando escalabilidade dos testes , consumindo um json com dados.
 
-const userData = {
-  userSucess: {
-    user: "Admin",
-    passWord: "admin123",
-  },
-  userFail: {
-    user: "Teste",
-    passWord: "test1223",
-  },
-};
+import userData from "../fixtures/userData.json"; 
 
 describe("featureLoginPage", () => {
   beforeEach(() => {

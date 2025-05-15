@@ -12,7 +12,7 @@
 
 - [Instalação](#Instalação)
 - [Executando](#Executando)
-
+- [Review](#Review)
 
 
 ## Instalação
@@ -40,5 +40,7 @@ Para rodar todos os testes em Ambiente com UI:
 ``` npx cypress open ```
 
 
+## Review
 
+Este projeto foi desenvolvido com base no padrão POM (Page Object Model), utilizando o arquivo commands.js, o que torna a estrutura mais escalável. Os dados foram consumidos de um arquivo .json localizado em fixtures, o que também contribui para a escalabilidade e reutilização do projeto.
    
