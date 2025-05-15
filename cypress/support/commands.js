@@ -24,10 +24,13 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('preencherCampos', (email, senha) => {
+// pesando em escalabildiade de codigo, sempre que mudar algo, só mudar no objeto
+const userList = {
+  username: "[name='username']",
+  password: "[name='password']",
+};
 
-    cy.get("[name='username']").type(email);
-    cy.get("[name='password']").type(senha);
-
-
-})
+Cypress.Commands.add("preencherCampos", (email, senha) => {
+  cy.get(userList.username).type(email);
+  cy.get(userList.password).type(senha);
+});
