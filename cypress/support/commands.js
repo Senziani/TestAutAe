@@ -34,3 +34,4 @@ Cypress.Commands.add("preencherCampos", (email, senha) => {
   cy.get(userList.username).type(email);
   cy.get(userList.password).type(senha);
 });
+

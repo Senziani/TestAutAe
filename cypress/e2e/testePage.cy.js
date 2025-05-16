@@ -3,14 +3,13 @@
 
 // melhorando escalabilidade dos testes , consumindo um json com dados.
 
-import userData from "../fixtures/userData.json"; 
+import userData from "../fixtures/userData.json";
 
 describe("featureLoginPage", () => {
   beforeEach(() => {
     cy.clearAllLocalStorage();
-    cy.visit(
-      "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-    );
+    // setando a url base no arquivo de configuração cypress.config.js
+    cy.visit('/auth/login')
   });
   //it.skip para pular o teste.
   it("Login - Sucesso", () => {
