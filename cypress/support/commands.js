@@ -28,6 +28,12 @@
 const userList = {
   username: "[name='username']",
   password: "[name='password']",
+  button: "[type='submit']",
+  clickInfo: "/pim/viewPersonalDetails/empNumber/7",
+  firstName: "[name='firstName']",
+  midleName: "[name='middleName']",
+  lastName: "[name='lastName']",
+  employID:".oxd-input"
 };
 
 Cypress.Commands.add("preencherCampos", (email, senha) => {
@@ -35,3 +41,4 @@ Cypress.Commands.add("preencherCampos", (email, senha) => {
   cy.get(userList.password).type(senha);
 });
 
+module.exports = userList;

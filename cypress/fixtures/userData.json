@@ -6,5 +6,11 @@
   "userFail": {
     "user": "Teste",
     "passWord": "test1223"
+  },
+  "Dados": {
+    "firstName": "Pelezinho",
+    "midleName": "Silva",
+    "lastName": "Pelota",
+    "employID": 1105980
   }
 }
